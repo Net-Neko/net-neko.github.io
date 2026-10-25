@@ -16,7 +16,7 @@
 <p><strong>莫队算法问题的一般形式</strong>：给定a<sub>1</sub>, a<sub>2</sub>, …, a<sub>n</sub>，有q个问题，每个问题给出一个[l, r]进行询问。</p>
 <p><strong>莫队算法一般形式</strong>：</p>
 <ol>
-<li><strong>对数组进行分块预处理</strong>：一般将数组分成$$\sqrt{n}$$个块，那么块大小也为$$\sqrt{n}$$。块大小可调整，可按实际情况优化。</li>
+<li><strong>对数组进行分块预处理</strong>：一般将数组分成$\sqrt{n}$个块，那么块大小也为$\sqrt{n}$。块大小可调整，可按实际情况优化。</li>
 <li><strong>对查询区间进行排序预处理</strong>：按查询区间左端点所在块的序号排序，若左端点同在一个块，按右端点排序。</li>
 <li><strong>设一个用以维护的区间([L, R])</strong>：初始将我们维护的区间的L端点指向1，R指向0。</li>
 <li><strong>维护区间，保存答案</strong>：用<code>add</code>、<code>remove</code>操作维护区间，将其往下一个查询区间靠齐，并将靠齐后的答案记录下来。</li>
